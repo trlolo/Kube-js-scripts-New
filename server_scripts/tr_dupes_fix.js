@@ -41,7 +41,7 @@ onEvent('recipes', (event) => {
   "ingredients" : [
     {
       "item": "minecraft:rail",
-	  "count":16
+	  "count":20
     },
     {
       "item": "minecraft:sand"
