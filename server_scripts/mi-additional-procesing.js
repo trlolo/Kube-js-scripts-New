@@ -792,10 +792,16 @@ onEvent('recipes', (event) => {
       "item": "kubejs:titanium_chloride_cell",
       "amount": 1
   },
-  "item_outputs": {
+  "item_outputs": [
+  {
       "item": "modern_industrialization:titanium_dust",
       "amount": 1
   },
+  {
+      "item": "kubejs:inert_cell",
+      "amount": 1
+  }
+],
   "fluid_outputs" : {
     "fluid" : "modern_industrialization:chlorine",
     "amount" : 2000
