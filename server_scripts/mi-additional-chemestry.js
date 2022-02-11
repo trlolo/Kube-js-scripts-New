@@ -76,4 +76,68 @@ onEvent('recipes', (event) => {
     "amount" : 3000
   }
 })
+ event.custom({
+  "id":"iron_stainning",
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 8,
+  "duration":200 ,
+  "item_inputs": [
+    {
+      "item": "minecraft:iron_ingot",
+      "amount": 2
+    },
+    {
+      "item": "modern_industrialization:salt_dust",
+      "amount": 1,
+	  "probability" : 0.1
+    }
+],
+  "fluid_inputs": [
+    {
+      "fluid": "modern_industrialization:oxygen",
+      "amount": 3000
+    },
+    {
+      "fluid": "modern_industrialization:sulfuric_acid",
+      "amount": 300
+    },
+    {
+      "fluid": "modern_industrialization:hydrochloric_acid",
+      "amount": 100
+    }
+],
+  "item_outputs": {
+      "item": "kubejs:stained_steel_ingot",
+      "amount": 1
+    }
+})
+ event.custom({
+  "id":"stained_steel_cleaning",
+  "type": "modern_industrialization:mixer",
+  "eu": 8,
+  "duration": 400,
+  "item_inputs": {
+      "item": "kubejs:stained_steel_ingot",
+      "amount": 1,
+    },
+  "fluid_inputs": {
+      "fluid": "minecraft:water",
+      "amount": 6000
+    },
+  "item_outputs": [
+    {
+      "item": "modern_industrialization:stainless_steel_ingot",
+      "amount": 2,
+	  "probability" : 0.99
+    },
+    {
+      "item": "minecraft:dirt",
+      "amount": 1
+    },
+    {
+      "item": "kubejs:mesage",
+      "amount": 1
+    },
+]
+})
 })
