@@ -1,6 +1,6 @@
 mi-additional-chemestry add some chemestry recipes Needs mi-additional-chemestry-items to work and mi-additional-core,
 mi-additional-core and some common recipes Needs mi-additional-core-items to work,
-mi-additional-procesing For now adds new way of procesing uranium, gold, titanium, iron and copper, Needs mi-additional-procesing-items to work,
+mi-additional-procesing For now adds new way of procesing uranium, gold, titanium, iron and copper, Needs mi-additional-procesing-items and mi-additional-core to work,
 mi-farming-for-fun "Fun" recipes for chemecal reactor,
 mi-farming-procesing Procesing recipes for now only for electric blast furnace,
 mi-farming-recipes Add crop and tree "farming" in chemecal reactor,
