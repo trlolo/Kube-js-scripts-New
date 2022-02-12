@@ -818,7 +818,7 @@ onEvent('recipes', (event) => {
   },
   "item_outputs": {
       "item": "modern_industrialization:iron_dust",
-      "amount": 2
+      "amount": 1
   },
   "fluid_outputs" : {
     "fluid" : "modern_industrialization:chlorine",
@@ -1033,5 +1033,139 @@ onEvent('recipes', (event) => {
 	  "probability" : 0.95
   }
 ]
+})
+ event.custom({
+  "id":"alkaline_tungsten_disolition",
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 8,
+  "duration": 1200,
+  "item_inputs": {
+      "item": "modern_industrialization:raw_tungsten",
+      "amount": 1
+    },
+  "fluid_inputs": {
+      "fluid": "modern_industrialization:sodium_hydroxide",
+      "amount": 6000
+  },
+  "item_outputs": {
+      "item": "kubejs:impure_sodium_tungstate",
+      "amount": 2
+  },
+  "fluid_outputs" : {
+    "fluid" : "minecraft:water",
+    "amount" : 3000
+  }
+})
+ event.custom({
+  "id":"sodium_tungstate_purification",
+  "type": "modern_industrialization:centrifuge",
+  "eu": 8,
+  "duration": 500,
+  "item_inputs": {
+      "item": "kubejs:impure_sodium_tungstate",
+      "amount": 1
+    },
+  "fluid_inputs": {
+      "fluid": "minecraft:water",
+      "amount": 500
+    },
+  "item_outputs": [
+  {
+      "item": "kubejs:pure_sodium_tungstate",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:pure_sodium_tungstate",
+      "amount": 1,
+	  "probability" : 0.5
+  },
+  {
+      "item": "kubejs:iron_oxide",
+      "amount": 1,
+	  "probability" : 0.5
+  }
+]
+})
+ event.custom({
+  "id":"sodium_tungstate_exhange",
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 8,
+  "duration": 600,
+  "item_inputs": {
+      "item": "kubejs:pure_sodium_tungstate",
+      "amount": 1
+    },
+  "fluid_inputs": {
+      "fluid": "modern_industrialization:hydrochloric_acid",
+      "amount": 2000
+  },
+  "item_outputs": {
+      "item": "kubejs:impure_tungstic_acid",
+      "amount": 1
+  }
+})
+ event.custom({
+  "id":"tungstic_acid_purification",
+  "type": "modern_industrialization:centrifuge",
+  "eu": 8,
+  "duration": 500,
+  "item_inputs": {
+      "item": "kubejs:impure_tungstic_acid",
+      "amount": 1
+    },
+  "fluid_inputs": {
+      "fluid": "minecraft:water",
+      "amount": 500
+    },
+  "item_outputs": [
+  {
+      "item": "kubejs:pure_tungstic_acid",
+      "amount": 1
+  },
+  {
+      "item": "modern_industrialization:salt_dust",
+      "amount": 2
+  }
+]
+})
+ event.custom({
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "kubejs:pure_tungstic_acid"
+  },
+  "result": "kubejs:tungsten_oxide",
+  "cookingtime": 600
+})
+ event.custom({
+  "id":"tungsten_oxide_electrolysis",
+  "type": "modern_industrialization:electrolyzer",
+  "eu": 24,
+  "duration": 1200,
+  "item_inputs": {
+      "item": "kubejs:tungsten_oxide",
+      "amount": 1
+  },
+  "item_outputs": {
+      "item": "modern_industrialization:tungsten_dust",
+      "amount": 1
+  },
+  "fluid_outputs" : {
+    "fluid" : "modern_industrialization:oxygen",
+    "amount" : 1500
+  }
+})
+ event.custom({
+  "id":"tungsten_fusing",
+  "type": "modern_industrialization:blast_furnace",
+  "eu": 128,
+  "duration": 1800,
+  "item_inputs": {
+      "item": "modern_industrialization:tungsten_dust",
+      "amount": 1
+    },
+  "item_outputs": {
+      "item": "modern_industrialization:tungsten_ingot",
+      "amount": 1
+    }
 })
 })

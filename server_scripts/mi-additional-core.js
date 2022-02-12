@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     const id = [
     'modern_industrialization:materials/electrolyzer/water',
 	'modern_industrialization:materials/centrifuge/heavy_water',
+	'modern_industrialization:materials/electrolyzer/salt_electrolysis',
     ];
     id.forEach((id) => {
         event.remove({ id: id });
@@ -51,6 +52,24 @@ onEvent('recipes', (event) => {
       "amount": 20
   }
 ]
+})
+ event.custom({
+  "id":"salt_electrolysis",
+  "type": "modern_industrialization:electrolyzer",
+  "eu": 12,
+  "duration": 1200,
+  "item_inputs": {
+      "item": "modern_industrialization:salt_dust",
+      "amount": 1
+  },
+  "item_outputs": {
+      "item": "modern_industrialization:sodium_dust",
+      "amount": 1
+  },
+  "fluid_outputs": {
+      "fluid": "modern_industrialization:chlorine",
+      "amount": 500
+  }
 })
  event.custom({
   "id":"inert_cell_production",
