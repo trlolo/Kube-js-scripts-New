@@ -66,7 +66,7 @@ onEvent('recipes', (event) => {
       "amount": 1000
   },
   "item_outputs": {
-      "item": "kubejs:uranium_trioxide",
+      "item": "kubejs:uranium_oxide",
       "amount": 1
   },
   "fluid_outputs" : {
@@ -75,12 +75,12 @@ onEvent('recipes', (event) => {
   }
 })
  event.custom({
-  "id":"uranium_trioxide_electrolysis",
+  "id":"uranium_oxide_electrolysis",
   "type": "modern_industrialization:electrolyzer",
   "eu": 32,
   "duration": 1000,
   "item_inputs": {
-      "item": "kubejs:uranium_trioxide",
+      "item": "kubejs:uranium_oxide",
       "amount": 1
   },
   "item_outputs": {
@@ -1167,5 +1167,177 @@ onEvent('recipes', (event) => {
       "item": "modern_industrialization:tungsten_ingot",
       "amount": 1
     }
+})
+ event.custom({
+  "id":"carbon_mono_oxide_production",
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 8,
+  "duration": 200,
+  "item_inputs": [
+  {
+      "item": "kubejs:inert_cell",
+      "amount": 1
+  },
+  {
+      "item": "modern_industrialization:carbon_dust",
+      "amount": 1
+  }
+],
+  "fluid_inputs": {
+      "fluid": "modern_industrialization:oxygen",
+      "amount": 500
+  },
+  "item_outputs": {
+      "item": "kubejs:carbon_mono_oxide_cell",
+      "amount": 1
+  }
+})
+ event.custom({
+  "id":"feronickel_carbonyl_disolition",
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 12,
+  "duration": 1200,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:raw_nickel",
+      "amount": 2
+    },
+    {
+      "item": "kubejs:carbon_mono_oxide_cell",
+      "amount": 21
+    },
+],
+  "item_outputs": [
+  {
+      "item": "kubejs:impure_feronickel_carbonyl_cell",
+      "amount": 4
+  },
+  {
+      "item": "kubejs:inert_cell",
+      "amount": 16
+  }
+]
+})
+ event.custom({
+  "id":"feronickel_carbonyl_purification",
+  "type": "modern_industrialization:centrifuge",
+  "eu": 8,
+  "duration": 200,
+  "item_inputs": {
+      "item": "kubejs:impure_feronickel_carbonyl_cell",
+      "amount": 1
+    },
+  "item_outputs": [
+  {
+      "item": "kubejs:pure_feronickel_carbonyl_cell",
+      "amount": 1
+  },
+  {
+      "item": "modern_industrialization:copper_dust",
+      "amount": 1,
+	  "probability" : 0.15
+  }
+]
+})
+ event.custom({
+  "id":"feronickel_carbonyl_separation",
+  "type": "modern_industrialization:centrifuge",
+  "eu": 16,
+  "duration": 400,
+  "item_inputs": {
+      "item": "kubejs:pure_feronickel_carbonyl_cell",
+      "amount": 1
+    },
+  "item_outputs": [
+  {
+      "item": "kubejs:nickel_carbonyl_cell",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:iron_carbonyl_cell",
+      "amount": 1,
+	  "probability" : 0.25
+  }
+]
+})
+ event.custom({
+  "id":"nickel_carbonyl_preparation",
+  "type": "modern_industrialization:mixer",
+  "eu": 8,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "kubejs:nickel_carbonyl_cell",
+      "amount": 1
+    },
+    {
+      "item": "kubejs:inert_cell",
+      "amount": 3
+    },
+],
+  "item_outputs": {
+      "item": "kubejs:prepared_nickel_carbonyl_cell",
+      "amount": 1
+  }
+})
+ event.custom({
+  "id":"iron_carbonyl_preparation",
+  "type": "modern_industrialization:mixer",
+  "eu": 8,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "kubejs:iron_carbonyl_cell",
+      "amount": 1
+    },
+    {
+      "item": "kubejs:inert_cell",
+      "amount": 4
+    }
+],
+  "item_outputs": {
+      "item": "kubejs:prepared_iron_carbonyl_cell",
+      "amount": 1
+  }
+})
+ event.custom({
+  "id":"nickel_carbonyl_pyrolysis",
+  "type": "modern_industrialization:centrifuge",
+  "eu": 12,
+  "duration": 400,
+  "item_inputs": {
+      "item": "kubejs:prepared_nickel_carbonyl_cell",
+      "amount": 1
+  },
+  "item_outputs": [
+  {
+      "item": "modern_industrialization:nickel_dust",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:carbon_mono_oxide_cell",
+      "amount": 4
+  }
+]
+})
+ event.custom({
+  "id":"iron_carbonyl_pyrolysis",
+  "type": "modern_industrialization:centrifuge",
+  "eu": 12,
+  "duration": 500,
+  "item_inputs": {
+      "item": "kubejs:prepared_iron_carbonyl_cell",
+      "amount": 1
+    },
+  "item_outputs": [
+  {
+      "item": "modern_industrialization:iron_dust",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:carbon_mono_oxide_cell",
+      "amount": 5
+  }
+]
 })
 })
