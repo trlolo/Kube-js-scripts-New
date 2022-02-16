@@ -10,7 +10,7 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"water_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 8,
+  "eu": 16,
   "duration": 600,
   "item_inputs": {
       "item": "modern_industrialization:analog_circuit",

@@ -2,8 +2,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"sulfuric_uranium_disolition",
   "type": "modern_industrialization:chemical_reactor",
-  "eu": 16,
-  "duration": 400,
+  "eu": 8,
+  "duration": 600,
   "item_inputs": {
       "item": "modern_industrialization:raw_uranium",
       "amount": 1
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
   "id":"uranium_sulfate_purification",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 500,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:impure_uranium_sulfate",
       "amount": 1
@@ -55,8 +55,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"uranium_sulfate_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 16,
-  "duration": 700,
+  "eu": 32,
+  "duration": 750,
   "item_inputs": {
       "item": "kubejs:pure_uranium_sulfate",
       "amount": 1
@@ -78,7 +78,7 @@ onEvent('recipes', (event) => {
   "id":"uranium_oxide_electrolysis",
   "type": "modern_industrialization:electrolyzer",
   "eu": 32,
-  "duration": 1000,
+  "duration": 1450,
   "item_inputs": {
       "item": "kubejs:uranium_oxide",
       "amount": 1
@@ -95,8 +95,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"lead_sulfate_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 24,
-  "duration": 700,
+  "eu": 32,
+  "duration": 800,
   "item_inputs": {
       "item": "kubejs:lead_sulfate",
       "amount": 1
@@ -134,7 +134,7 @@ onEvent('recipes', (event) => {
   "id":"nitric_copper_disolition",
   "type": "modern_industrialization:chemical_reactor",
   "eu": 12,
-  "duration": 500,
+  "duration": 400,
   "item_inputs": [
     {
       "item": "minecraft:raw_copper",
@@ -174,8 +174,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"copper_nirate_exhange",
   "type": "modern_industrialization:chemical_reactor",
-  "eu": 4,
-  "duration": 1000,
+  "eu": 8,
+  "duration": 400,
   "item_inputs": [
     {
       "item": "kubejs:impure_copper_nitrate",
@@ -235,7 +235,7 @@ onEvent('recipes', (event) => {
   "id":"copper_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
   "eu": 16,
-  "duration": 800,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:pure_copper_chloride",
       "amount": 1
@@ -252,8 +252,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"silver_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 12,
-  "duration": 600,
+  "eu": 8,
+  "duration": 300,
   "item_inputs": {
       "item": "kubejs:silver_chloride",
       "amount": 1
@@ -271,7 +271,7 @@ onEvent('recipes', (event) => {
   "id":"aqua_regia_gold_disolition",
   "type": "modern_industrialization:chemical_reactor",
   "eu": 8,
-  "duration": 3000,
+  "duration": 1600,
   "item_inputs": [
     {
       "item": "minecraft:raw_gold",
@@ -311,7 +311,7 @@ onEvent('recipes', (event) => {
   "id":"silver_chloride_purification",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 600,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:impure_precious_metals_chloride",
       "amount": 1
@@ -354,7 +354,7 @@ onEvent('recipes', (event) => {
   "id":"gold_chloride_purification",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 500,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:fired_precious_metals_chloride",
       "amount": 1
@@ -378,8 +378,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"gold_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 8,
-  "duration": 600,
+  "eu": 4,
+  "duration": 300,
   "item_inputs": {
       "item": "kubejs:gold_chloride",
       "amount": 1
@@ -415,7 +415,7 @@ onEvent('recipes', (event) => {
   "id":"iridium_chloride_purification",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 800,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:fired_iridium_chloride",
       "amount": 2
@@ -443,7 +443,7 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"platinum_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 16,
+  "eu": 8,
   "duration": 400,
   "item_inputs": {
       "item": "kubejs:platinum_chloride",
@@ -462,7 +462,7 @@ onEvent('recipes', (event) => {
   "id":"iridium_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
   "eu": 16,
-  "duration": 900,
+  "duration": 750,
   "item_inputs": {
       "item": "kubejs:pure_iridium_chloride",
       "amount": 1
@@ -498,7 +498,7 @@ onEvent('recipes', (event) => {
   "id":"magnetic_iron_oxide_purification",
   "type": "modern_industrialization:mixer",
   "eu": 8,
-  "duration": 500,
+  "duration": 400,
   "item_inputs": [
     {
       "item": "kubejs:impure_iron_like_metals_oxide",
@@ -526,7 +526,7 @@ onEvent('recipes', (event) => {
   "id":"iron_oxide_redusing",
   "type": "modern_industrialization:blast_furnace",
   "eu": 16,
-  "duration": 500,
+  "duration": 400,
   "item_inputs": [
     {
       "item": "kubejs:iron_oxide",
@@ -545,8 +545,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"iron_oxide_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 16,
-  "duration": 1600,
+  "eu": 32,
+  "duration": 1250,
   "item_inputs": {
       "item": "kubejs:iron_oxide",
       "amount": 1
@@ -563,8 +563,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"crucible_cutting",
   "type": "modern_industrialization:cutting_machine",
-  "eu": 8,
-  "duration": 600,
+  "eu": 2,
+  "duration": 4000,
   "item_inputs": {
       "item": "modern_industrialization:fire_clay_bricks",
       "amount": 1
@@ -603,7 +603,7 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"crucible_filling_manganese",
   "type": "modern_industrialization:packer",
-  "eu": 4,
+  "eu": 2,
   "duration": 100,
   "item_inputs": [
     {
@@ -665,7 +665,7 @@ onEvent('recipes', (event) => {
   "id":"hot_nickel_seperation",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 300,
+  "duration": 200,
   "item_inputs": 
     {
       "item": "kubejs:hot_nickel_like_crucible",
@@ -695,7 +695,7 @@ onEvent('recipes', (event) => {
   "id":"manganese_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
   "eu": 16,
-  "duration": 1000,
+  "duration": 900,
   "item_inputs": {
       "item": "kubejs:manganese_chloride",
       "amount": 1
@@ -712,8 +712,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"chromium_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 24,
-  "duration": 1200,
+  "eu": 32,
+  "duration": 700,
   "item_inputs": {
       "item": "kubejs:chromium_chloride",
       "amount": 1
@@ -731,7 +731,7 @@ onEvent('recipes', (event) => {
   "id":"nickel_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
   "eu": 16,
-  "duration": 800,
+  "duration": 650,
   "item_inputs": {
       "item": "kubejs:nickel_chloride",
       "amount": 1
@@ -749,7 +749,7 @@ onEvent('recipes', (event) => {
   "id":"titanium_disolution",
   "type": "modern_industrialization:chemical_reactor",
   "eu": 16,
-  "duration": 1600,
+  "duration": 800,
   "item_inputs": [
     {
       "item": "modern_industrialization:raw_titanium",
@@ -784,10 +784,18 @@ onEvent('recipes', (event) => {
 ]
 })
  event.custom({
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "kubejs:carbon_mono_oxide_cell"
+  },
+  "result": "kubejs:inert_cell",
+  "cookingtime": 100
+})
+ event.custom({
   "id":"titanium_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 16,
-  "duration": 1200,
+  "eu": 32,
+  "duration": 1100,
   "item_inputs": {
       "item": "kubejs:titanium_chloride_cell",
       "amount": 1
@@ -810,8 +818,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"iron_chloride_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 16,
-  "duration": 600,
+  "eu": 32,
+  "duration": 550,
   "item_inputs": {
       "item": "kubejs:iron_chloride",
       "amount": 1
@@ -829,7 +837,7 @@ onEvent('recipes', (event) => {
   "id":"carbon_mono_oxide_electrolysis",
   "type": "modern_industrialization:electrolyzer",
   "eu": 16,
-  "duration": 800,
+  "duration": 500,
   "item_inputs": {
       "item": "kubejs:carbon_mono_oxide_cell",
       "amount": 1
@@ -853,7 +861,7 @@ onEvent('recipes', (event) => {
   "id":"aqua_regia_copper_disolition",
   "type": "modern_industrialization:chemical_reactor",
   "eu": 16,
-  "duration": 1000,
+  "duration": 600,
   "item_inputs": [
     {
       "item": "minecraft:raw_copper",
@@ -898,7 +906,7 @@ onEvent('recipes', (event) => {
   "id":"copper_like_metals_chloride_purification",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 500,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:impure_copper_like_metals_chloride",
       "amount": 1
@@ -945,7 +953,7 @@ onEvent('recipes', (event) => {
   "id":"cuprogold_chloride_purification",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 1000,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:fired_cuprogold_chloride",
       "amount": 1
@@ -975,7 +983,7 @@ onEvent('recipes', (event) => {
   "id":"salt_water_disolition",
   "type": "modern_industrialization:chemical_reactor",
   "eu": 8,
-  "duration": 500,
+  "duration": 400,
   "item_inputs": [
     {
       "item": "modern_industrialization:salt_crushed_dust",
@@ -999,7 +1007,7 @@ onEvent('recipes', (event) => {
   "id":"brine_crucible_heating",
   "type": "modern_industrialization:blast_furnace",
   "eu": 32,
-  "duration": 1200,
+  "duration": 800,
   "item_inputs": {
       "item": "kubejs:cold_brine_crucible",
       "amount": 1
@@ -1013,7 +1021,7 @@ onEvent('recipes', (event) => {
   "id":"salt_purification",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 1000,
+  "duration": 200,
   "item_inputs": {
       "item": "kubejs:hot_salt_crucible",
       "amount": 1
@@ -1038,7 +1046,7 @@ onEvent('recipes', (event) => {
   "id":"alkaline_tungsten_disolition",
   "type": "modern_industrialization:chemical_reactor",
   "eu": 8,
-  "duration": 1200,
+  "duration": 600,
   "item_inputs": {
       "item": "modern_industrialization:raw_tungsten",
       "amount": 1
@@ -1060,7 +1068,7 @@ onEvent('recipes', (event) => {
   "id":"sodium_tungstate_purification",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 500,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:impure_sodium_tungstate",
       "amount": 1
@@ -1090,7 +1098,7 @@ onEvent('recipes', (event) => {
   "id":"sodium_tungstate_exhange",
   "type": "modern_industrialization:chemical_reactor",
   "eu": 8,
-  "duration": 600,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:pure_sodium_tungstate",
       "amount": 1
@@ -1108,7 +1116,7 @@ onEvent('recipes', (event) => {
   "id":"tungstic_acid_purification",
   "type": "modern_industrialization:centrifuge",
   "eu": 8,
-  "duration": 500,
+  "duration": 400,
   "item_inputs": {
       "item": "kubejs:impure_tungstic_acid",
       "amount": 1
@@ -1139,8 +1147,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"tungsten_oxide_electrolysis",
   "type": "modern_industrialization:electrolyzer",
-  "eu": 24,
-  "duration": 1200,
+  "eu": 32,
+  "duration": 750,
   "item_inputs": {
       "item": "kubejs:tungsten_oxide",
       "amount": 1
@@ -1172,7 +1180,7 @@ onEvent('recipes', (event) => {
   "id":"carbon_mono_oxide_production",
   "type": "modern_industrialization:chemical_reactor",
   "eu": 8,
-  "duration": 200,
+  "duration": 100,
   "item_inputs": [
   {
       "item": "kubejs:inert_cell",
@@ -1195,8 +1203,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"feronickel_carbonyl_disolition",
   "type": "modern_industrialization:chemical_reactor",
-  "eu": 12,
-  "duration": 1200,
+  "eu": 8,
+  "duration": 800,
   "item_inputs": [
     {
       "item": "modern_industrialization:raw_nickel",
@@ -1264,7 +1272,7 @@ onEvent('recipes', (event) => {
   "id":"nickel_carbonyl_preparation",
   "type": "modern_industrialization:mixer",
   "eu": 8,
-  "duration": 200,
+  "duration": 100,
   "item_inputs": [
     {
       "item": "kubejs:nickel_carbonyl_cell",
@@ -1284,7 +1292,7 @@ onEvent('recipes', (event) => {
   "id":"iron_carbonyl_preparation",
   "type": "modern_industrialization:mixer",
   "eu": 8,
-  "duration": 200,
+  "duration": 100,
   "item_inputs": [
     {
       "item": "kubejs:iron_carbonyl_cell",
@@ -1303,8 +1311,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"nickel_carbonyl_pyrolysis",
   "type": "modern_industrialization:centrifuge",
-  "eu": 12,
-  "duration": 400,
+  "eu": 8,
+  "duration": 600,
   "item_inputs": {
       "item": "kubejs:prepared_nickel_carbonyl_cell",
       "amount": 1
@@ -1323,8 +1331,8 @@ onEvent('recipes', (event) => {
  event.custom({
   "id":"iron_carbonyl_pyrolysis",
   "type": "modern_industrialization:centrifuge",
-  "eu": 12,
-  "duration": 500,
+  "eu": 8,
+  "duration": 800,
   "item_inputs": {
       "item": "kubejs:prepared_iron_carbonyl_cell",
       "amount": 1
@@ -1337,6 +1345,344 @@ onEvent('recipes', (event) => {
   {
       "item": "kubejs:carbon_mono_oxide_cell",
       "amount": 5
+  }
+]
+})
+ event.custom({
+  "id":"sulfuric_calcite_disolition",
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 8,
+  "duration": 400,
+  "item_inputs": [
+    {
+      "item": "minecraft:calcite",
+      "amount": 1
+    },
+    {
+      "item": "kubejs:inert_cell",
+      "amount": 10
+    }
+],
+  "fluid_inputs": {
+      "fluid": "modern_industrialization:sulfuric_acid",
+      "amount": 9000
+  },
+  "item_outputs": [
+  {
+      "item": "kubejs:calcium_sulfate",
+      "amount": 9
+  },
+  {
+      "item": "kubejs:carbon_dioxide_cell",
+      "amount": 8
+  },
+  {
+      "item": "kubejs:hydrogen_fluoride_cell",
+      "amount": 2
+  }
+],
+  "fluid_outputs" : {
+    "fluid" : "minecraft:water",
+    "amount" : 8000
+  }
+
+})
+ event.custom({
+  "id":"carbon_dioxide_electrolysis",
+  "type": "modern_industrialization:electrolyzer",
+  "eu": 32,
+  "duration": 550,
+  "item_inputs": {
+      "item": "kubejs:carbon_dioxide_cell",
+      "amount": 1
+  },
+  "item_outputs": [
+  {
+      "item": "kubejs:inert_cell",
+      "amount": 1
+  },
+  {
+      "item": "modern_industrialization:carbon_dust",
+      "amount": 1
+  }
+],
+  "fluid_outputs" : {
+    "fluid" : "modern_industrialization:oxygen",
+    "amount" : 1000
+  }
+})
+ event.custom({
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "kubejs:carbon_dioxide_cell"
+  },
+  "result": "kubejs:inert_cell",
+  "cookingtime": 100
+})
+ event.custom({
+  "id":"calcium_sulfate_electrolysis",
+  "type": "modern_industrialization:electrolyzer",
+  "eu": 32,
+  "duration": 1450,
+  "item_inputs": {
+      "item": "kubejs:calcium_sulfate",
+      "amount": 1
+  },
+  "fluid_inputs": {
+      "fluid": "minecraft:water",
+      "amount": 2000
+  },
+  "item_outputs": {
+      "item": "kubejs:calcium_hydro_oxide",
+      "amount": 1
+  },
+  "fluid_outputs" : {
+    "fluid" : "modern_industrialization:sulfuric_acid",
+    "amount" : 1000
+  }
+})
+ event.custom({
+  "id":"carbon_dioxide_reduction",
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 8,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "kubejs:inert_cell",
+      "amount": 1
+    },    
+	{
+      "item": "kubejs:carbon_dioxide_cell",
+      "amount": 1
+    },
+    {
+      "item": "modern_industrialization:carbon_dust",
+      "amount": 1
+    }
+],
+  "item_outputs": {
+      "item": "kubejs:carbon_mono_oxide_cell",
+      "amount": 2
+  }
+})
+ event.custom({
+  "id":"hydrogen_fluoride_electrolysis",
+  "type": "modern_industrialization:electrolyzer",
+  "eu": 16,
+  "duration": 900,
+  "item_inputs": {
+      "item": "kubejs:hydrogen_fluoride_cell",
+      "amount": 2
+  },
+  "item_outputs": [
+  {
+      "item": "kubejs:fluorine_cell",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:inert_cell",
+      "amount": 1
+  }
+],  
+  "fluid_outputs" : {
+    "fluid" : "modern_industrialization:hydrogen",
+    "amount" : 500
+  }
+})
+ event.custom({
+  "id":"lead_fluorine_disolition",
+  "type": "modern_industrialization:chemical_reactor",
+  "eu": 8,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "modern_industrialization:raw_lead",
+      "amount": 1
+    },
+    {
+      "item": "kubejs:fluorine_cell",
+      "amount": 5
+    },
+],
+  "item_outputs": [
+  {
+      "item": "kubejs:impure_lead_fluoride",
+      "amount": 3
+  },
+  {
+      "item": "kubejs:inert_cell",
+      "amount": 5
+  }
+]
+})
+ event.custom({
+  "id":"lead_fluorine_purification",
+  "type": "modern_industrialization:centrifuge",
+  "eu": 8,
+  "duration": 400,
+  "item_inputs": {
+      "item": "kubejs:impure_lead_fluoride",
+      "amount": 1
+    },
+  "fluid_inputs": {
+      "fluid": "minecraft:water",
+      "amount": 500
+    },
+  "item_outputs": [
+  {
+      "item": "kubejs:pure_lead_fluoride",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:impure_antimony_fluoride",
+      "amount": 1,
+	  "probability" : 0.35
+  }
+]
+})
+ event.custom({
+  "id":"lead_fluorine_preparation",
+  "type": "modern_industrialization:mixer",
+  "eu": 8,
+  "duration": 100,
+  "item_inputs": [
+    {
+      "item": "kubejs:pure_lead_fluoride",
+      "amount": 1
+    },
+    {
+      "item": "kubejs:inert_cell",
+      "amount": 1
+    }
+],
+  "item_outputs": {
+      "item": "kubejs:lead_fluoride_cell",
+      "amount": 1
+  }
+})
+ event.custom({
+  "id":"lead_fluoride_electrolysis",
+  "type": "modern_industrialization:electrolyzer",
+  "eu": 16,
+  "duration": 1000,
+  "item_inputs": {
+      "item": "kubejs:lead_fluoride_cell",
+      "amount": 1
+  },
+  "item_outputs": [
+  {
+      "item": "modern_industrialization:lead_dust",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:fluorine_cell",
+      "amount": 1
+  }
+]
+})
+ event.custom({
+  "id":"antimony_fluoride_purification",
+  "type": "modern_industrialization:centrifuge",
+  "eu": 16,
+  "duration": 400,
+  "item_inputs": {
+      "item": "kubejs:impure_antimony_fluoride",
+      "amount": 1
+    },
+  "item_outputs": [
+  {
+      "item": "kubejs:tin_fluoride",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:pure_antimony_fluoride",
+      "amount": 1,
+	  "probability" : 0.6
+  }
+]
+})
+ event.custom({
+  "id":"tin_fluorine_preparation",
+  "type": "modern_industrialization:mixer",
+  "eu": 8,
+  "duration": 100,
+  "item_inputs": [
+    {
+      "item": "kubejs:tin_fluoride",
+      "amount": 1
+    },
+    {
+      "item": "kubejs:inert_cell",
+      "amount": 1
+    }
+],
+  "item_outputs": {
+      "item": "kubejs:tin_fluoride_cell",
+      "amount": 1
+  }
+})
+ event.custom({
+  "id":"tin_fluoride_electrolysis",
+  "type": "modern_industrialization:electrolyzer",
+  "eu": 32,
+  "duration": 600,
+  "item_inputs": {
+      "item": "kubejs:tin_fluoride_cell",
+      "amount": 1
+  },
+  "item_outputs": [
+  {
+      "item": "modern_industrialization:tin_dust",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:fluorine_cell",
+      "amount": 1
+  }
+]
+})
+ event.custom({
+  "id":"antimony_fluorine_preparation",
+  "type": "modern_industrialization:mixer",
+  "eu": 8,
+  "duration": 200,
+  "item_inputs": [
+    {
+      "item": "kubejs:pure_antimony_fluoride",
+      "amount": 2
+    },
+    {
+      "item": "kubejs:inert_cell",
+      "amount": 3
+    }
+],
+  "item_outputs": {
+      "item": "kubejs:antimony_fluoride_cell",
+      "amount": 2
+  }
+})
+ event.custom({
+  "id":"antimony_fluoride_electrolysis",
+  "type": "modern_industrialization:electrolyzer",
+  "eu": 32,
+  "duration": 800,
+  "item_inputs": {
+      "item": "kubejs:antimony_fluoride_cell",
+      "amount": 1
+  },
+  "item_outputs": [
+  {
+      "item": "modern_industrialization:antimony_dust",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:fluorine_cell",
+      "amount": 1
+  },
+  {
+      "item": "kubejs:fluorine_cell",
+      "amount": 1,
+	  "probability" : 0.5
   }
 ]
 })
